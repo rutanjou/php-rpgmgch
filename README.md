@@ -136,7 +136,7 @@ Une fois que la commande a été validée, afficher un récapitulatif de la comm
 # Step 6 - Bonus
 * Si un utilisateur commande un produit périmé, afficher un message d'erreur.
 * Lors du récapitulatif, ajouter la possibilité à un utilisateur de supprimer un article de son panier.
-* Stocker le panier dans un COOKIE (ne stocker que les `id` du client et des produits) : rafraîchissez votre page et vérifier que le panier en cours est toujours visible. Ajouter alors la possibilité de réinitialiser la commande (client et produits).
+* Stocker le panier dans un COOKIE (ne stocker que les `id` du client et des produits) : rafraîchisser votre page et vérifier que le panier en cours est toujours visible. Ajouter alors la possibilité de réinitialiser la commande (client et produits).
 
 ***
 
