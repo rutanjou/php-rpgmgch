@@ -21,7 +21,7 @@ $users = require 'users.php';
        <tbody>
          <!-- tr = table row = ligne du tableau -->
          <?php
-         foreach ($users as $key => $user){
+         foreach ($users as $key => $user) :
            ?>
            <tr>
              <td>
@@ -35,7 +35,7 @@ $users = require 'users.php';
              </td>
            </tr>
         <?php
-          }
+          endforeach;
          ?>
        </tbody>
      </table>
