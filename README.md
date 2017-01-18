@@ -56,10 +56,10 @@ Créer une classe Product ayant les attributs et méthodes suivants :
 ### Vegetable.php
 Créer une classe Vegetable héritant de Product et ayant les attributs et méthodes suivants :
 * productorName
-* harvestedAt
+* expiresAt
 * isFresh()
 
-Implémenter la méthode fresh qui retourne un booléen, vrai si le produit a été récolté il y a moins de 24h, faux sinon.
+Implémenter la méthode fresh qui retourne un booléen, vrai si le produit peut être consommé (avant sa date d'expiration), faux sinon.
 
 ### Cloth.php
 Créer une classe Cloth héritant de Product et ayant les attributs et méthodes suivants :
@@ -82,7 +82,7 @@ Ajouter l'attribut (et ses accesseurs) `cart` qui est un tableau de Product.
 
 Ajouter la méthode `addProductToCart($product)` qui ajouter un produit au panier du client.
 
-Dans la classe Client.php, implémenter la méthode `buy` pour qu'elle prenne en paramètre un objet de classe Product.
+Dans la classe `Client`, implémenter la méthode `buy` pour qu'elle prenne en paramètre un objet de classe `Product`.
 
 A chaque fois qu'un client achète un produit, sa facture augment du prix du produit et ce produit est ajouté au panier.
 
@@ -121,18 +121,22 @@ C'est toujours bon ? On continue
 ***
 
 # Step 5 : Shopping Time
-Créer une page `shopping.php` qui va permettre de créer une commande pour un client.
+Créer une page shopping.php qui va permettre de créer une commande pour un client.
 
-Afficher un `select` qui va permettre d'afficher et de sélectionner un client.
+Afficher un select qui va permettre d'afficher et de sélectionner un client.
 
 Afficher 3 `select` successifs qui vont permettre de sélectionner chacun un produit.
 
 Ajouter un bouton d'envoi de commande.
 
-Une fois que la commande a été validée, afficher un récapitulatif (sur la page `validation.php`) de la commande (cad le `cart` du client sélectionné) : liste des produits, prix total ...
+Une fois que la commande a été validée, afficher un récapitulatif de la commande (le `cart` du client sélectionné) : liste des produits, prix total ...
 
 
 ***
+# Step 6 - Bonus
+* Si un utilisateur commande un produit périmé, afficher un message d'erreur.
+* Lors du récapitulatif, ajouter la possibilité à un utilisateur de supprimer un article de son panier.
+* Stocker le panier dans un COOKIE (ne stocker que les `id` du client et des produits) : rafraîchissez votre page et vérifier que le panier en cours est toujours visible. Ajouter alors la possibilité de réinitialiser la commande (client et produits).
 
-# Step 6 : Module de paiement
+# Step 2836 : Module de paiement
 Implémenter un module de paiement avec Stripe.
