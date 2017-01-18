@@ -121,15 +121,15 @@ C'est toujours bon ? On continue
 ***
 
 # Step 5 : Shopping Time
-Créer une page shopping.php qui va permettre de créer une commande pour un client.
+Créer une page `shopping.php` qui va permettre de créer une commande pour un client.
 
-Afficher un select qui va permettre d'afficher et de sélectionner un client.
+Afficher un `select` qui va permettre d'afficher et de sélectionner un client.
 
 Afficher 3 `select` successifs qui vont permettre de sélectionner chacun un produit.
 
 Ajouter un bouton d'envoi de commande.
 
-Une fois que la commande a été validée, afficher un récapitulatif de la commande (le `cart` du client sélectionné) : liste des produits, prix total ...
+Une fois que la commande a été validée, afficher un récapitulatif (sur la page `validation.php`) de la commande (cad le `cart` du client sélectionné) : liste des produits, prix total ...
 
 
 ***
