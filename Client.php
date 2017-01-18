@@ -10,3 +10,7 @@ class Client extends User {
       return;
     }
 }
+
+// Test
+// $client = new Client("id3", "robert@deni.ro", date('d/m/Y', time()));
+// var_dump($client);
