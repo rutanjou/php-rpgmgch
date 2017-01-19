@@ -141,10 +141,28 @@ A ce stade, votre workspace doit ressembler à cela :
 
 ```
 
+*** 
+
+# Php Break
+Jusque ici vous avez dû tester votre programme en lançant un server web php avec la commande suivante 
+```
+php -S 0.0.0.0:3000
+```
+
+Puis en allant sur votre client web, localhost:3000/testOrder.php
+
+
+Il est également possible d'exécuter un seul fichier php (comme fait dans la branche *step1*) pour tester rapidement. Par exemple, pour exécuter productTable.php :
+
+```
+php productTable.php
+```
 
 ***
 
 # Step 4 : Clean up
+Bon, notre progamme s'agrandit et vous vous êtes rendus compte que cela devient difficile de s'y retrouver puisque tous les fichiers sont au même niveau dans votre workspace. On va réorganiser tout cela en suivant le pattern MVC.
+
 ### models
 Créer un répertoire `models` dans lequel vous placez vos modèles : Product, Vegetable, Cloth, User, Client.
 
@@ -154,6 +172,8 @@ Testez. Tout fonctionne encore ?
 
 ### data
 Créer un répertoire `data` dans lequel vous placez vos données factices : users.php et products.php.
+
+*ce dossier va agir comme notre base de données. Mais pas persistente, évidemment, puisque rechargée à chaque requête*
 
 ### views
 Créer un répertoire `views` dans lequel vous placerez vos vues : userTable.php et productTable.php
