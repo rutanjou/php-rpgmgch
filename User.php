@@ -1,11 +1,11 @@
 <?php 
 class User{
-private $id = "";
-private $email = "";
-private $createdAt = "";
-public function __construct($id,$mail,$date){
+private $id;
+private $email;
+private $createdAt;
+public function __construct($id,$email,$date){
 	$this->id = $id;
-	$this->email = $mail;
+	$this->email = $email;
 	$this->createdAt = $date;
 }
 public function getId(){
@@ -20,10 +20,10 @@ public function getEmail(){
 public function setEmail(){
 	$this->email = $mail;
 }
-public function getCreatedat(){
+public function getCreatedAt(){
 	return $this->createdAt;
 }
-public function setCreatedat(){
-	$this->createdAt = $date;
+public function setCreatedAt(){
+	$this->createdat = $date;
 }
 }
